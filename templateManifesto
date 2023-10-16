@@ -1,0 +1,50 @@
+{
+    "display_information": {
+        "name": "Tray.io Bot",
+        "description": "Slackbot - powered by Tray.io",
+        "background_color": "#4a54f5"
+    },
+    "features": {
+        "bot_user": {
+            "display_name": "Tray.io",
+            "always_online": false
+        },
+        "shortcuts": [
+            {
+                "name": "Create a Ticket",
+                "type": "message",
+                "callback_id": "shortcut_createTicket_systemX",
+                "description": "Create a ticket from this Slack message"
+            }
+        ],
+        "slash_commands": [
+            {
+                "command": "/tray-help",
+                "url": "https://exampleWebhookUrl.trayapp.io",
+                "description": "get helpful links",
+                "usage_hint": "[just hit enter]",
+                "should_escape": false
+            }
+        ]
+    },
+    "oauth_config": {
+        "redirect_urls": [
+            "https://auth.tray.io/oauth2/token"
+        ],
+        "scopes": {
+            "bot": [
+                "channels:history",
+                "commands"
+            ]
+        }
+    },
+    "settings": {
+        "interactivity": {
+            "is_enabled": true,
+            "request_url": "https://exampleWebhookUrl.trayapp.io"
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
