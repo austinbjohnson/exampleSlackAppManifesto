@@ -1,0 +1,50 @@
+{
+    "display_information": {
+        "name": "AI Agent (Alpha)",
+        "description": "Deploy Agents built on Tray directly in your slack instance",
+        "background_color": "#906409"
+    },
+    "features": {
+        "app_home": {
+            "home_tab_enabled": false,
+            "messages_tab_enabled": true,
+            "messages_tab_read_only_enabled": false
+        },
+        "bot_user": {
+            "display_name": "AI Agent Alpha",
+            "always_online": false
+        },
+        "assistant_view": {
+            "assistant_description": "Integrate Tray AI Agents directly into your slack instance",
+            "suggested_prompts": []
+        }
+    },
+    "oauth_config": {
+        "redirect_urls": [
+            "https://auth.tray.io/oauth2/token"
+        ],
+        "scopes": {
+            "bot": [
+                "app_mentions:read",
+                "assistant:write",
+                "chat:write",
+                "im:history",
+                "users:read",
+                "channels:history"
+            ]
+        }
+    },
+    "settings": {
+        "event_subscriptions": {
+            "request_url": "UPDATEthisURL.trayapp.io",
+            "bot_events": [
+                "app_mention",
+                "assistant_thread_started",
+                "message.im"
+            ]
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
