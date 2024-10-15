@@ -1,8 +1,8 @@
 {
     "display_information": {
-        "name": "AI Agent (Alpha)",
-        "description": "Deploy Agents built on Tray directly in your slack instance",
-        "background_color": "#906409"
+        "name": "Tray Slack Agent",
+        "description": "Deploy Chatbots, Assistants, and Agents built using Tray directly in your Slack instance",
+        "background_color": "#4A54F5"
     },
     "features": {
         "app_home": {
@@ -11,11 +11,11 @@
             "messages_tab_read_only_enabled": false
         },
         "bot_user": {
-            "display_name": "AI Agent Alpha",
+            "display_name": "Tray Slack Agent",
             "always_online": false
         },
         "assistant_view": {
-            "assistant_description": "Integrate Tray AI Agents directly into your slack instance",
+            "assistant_description": "Deploy Chatbots, Assistants, and Agents built using Tray directly in your Slack instance",
             "suggested_prompts": []
         }
     },
