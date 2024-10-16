@@ -1,6 +1,6 @@
 {
     "display_information": {
-        "name": "Tray Slack Agent",
+        "name": "Tray Slack Chatbot",
         "description": "Deploy Chatbots, Assistants, and Agents built using Tray directly in your Slack instance",
         "background_color": "#4A54F5"
     },
@@ -11,7 +11,7 @@
             "messages_tab_read_only_enabled": false
         },
         "bot_user": {
-            "display_name": "Tray Slack Agent",
+            "display_name": "Tray Slack Chatbot",
             "always_online": false
         },
         "assistant_view": {
